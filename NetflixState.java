@@ -7,18 +7,18 @@ public class NetflixState implements State {
 
     @Override
     public void pressHomeButton() {
-        System.out.println("Loading the Home Screen...");
+        System.out.println("Loading the Home Screen...\n");
         tv.setState(tv.getHomeState());
     }
 
     @Override
     public void pressNetflixButton() {
-        System.out.println("We are already in Netflix");
+        System.out.println("We are already in Netflix\n");
     }
 
     @Override
     public void pressHuluButton() {
-        System.out.println("Loading Hulu...");
+        System.out.println("Loading Hulu...\n");
         tv.setState(tv.getHuluState());
     }
 
@@ -29,6 +29,7 @@ public class NetflixState implements State {
         for (String i : movies) {
             System.out.println("- " + i);
         }
+        System.out.println();
     }
 
     @Override
@@ -38,5 +39,6 @@ public class NetflixState implements State {
         for (String i : shows) {
             System.out.println("- " + i);
         }
+        System.out.println();
     }
 }
